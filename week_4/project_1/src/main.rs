@@ -15,7 +15,7 @@ fn main() {
     println!("A car travels {} kilometers/hour if it goes 80 miles in 2 hours",speed);
 
     speed = kilometer2/4.0;
-    println!("A car travels {} kilometers/hour if it goes 80 miles in 2 hours",speed);
+    println!("A car travels {} kilometers/hour if it goes 120 miles in 4 hours",speed);
 
 
 }
