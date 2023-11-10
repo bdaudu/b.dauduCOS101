@@ -17,6 +17,6 @@ fn main() {
     println!("\nEnter your age. ");
     let mut age = String::new();
         io::stdin().read_line(&mut age).expect("Failed to read input");
-    let age:i32 = age.trim().parse().expect("Input not an integer");
+    let age:i32 = age.trim().parse().expect("Not an integer");
     println!("Your age is: {}", age);    
 }
