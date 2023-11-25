@@ -10,7 +10,7 @@ fn main() {
     let mut input7 = String::new();
 
 
-    for _c in 1..151{
+    for _c in 0..150{
         println!("Enter your name: ");
     io::stdin().read_line(&mut input1);
     let name = input1.trim();
