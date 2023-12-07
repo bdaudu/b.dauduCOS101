@@ -26,16 +26,16 @@ fn main() {
     else if dep == "Office Administrator" && yowp >= 3.0 && yowp <= 5.0{
         println!("You hold the position APS 3-5:{}",oa[1]);
     }
-     else if dep == "Office Administrator" && yowp >= 5.0 && yowp <= 8.0{
+    else if dep == "Office Administrator" && yowp >= 5.0 && yowp <= 8.0{
         println!("You hold the position APS 5-8:{}",oa[2]);
     }
-     else if dep == "Office Administrator" && yowp >= 8.0 && yowp <= 10.0{
+    else if dep == "Office Administrator" && yowp >= 8.0 && yowp <= 10.0{
         println!("You hold the position EL1 8-10:{}",oa[3]);
     }
-     else if dep == "Office Administrator" && yowp >= 10.0 && yowp <= 13.0{
+    else if dep == "Office Administrator" && yowp >= 10.0 && yowp <= 13.0{
         println!("You hold the position EL2 10-13:{}",oa[4]);
     }
-     else if dep == "Office Administrator" && yowp >= 13.0{
+    else if dep == "Office Administrator" && yowp >= 13.0{
         println!("You hold the position SES:{}",a[5]);
     }
     else if dep == "Academic" && yowp >= 1.0 && yowp <= 2.0{
