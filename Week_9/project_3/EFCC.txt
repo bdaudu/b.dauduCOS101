@@ -1,19 +1,4 @@
-
-Name of Comissioner	
-Aigbogun Alamba Daudu
-Murtala Afeez Bendu
-Okorocha Calistus Ogbona
-Adewale Jimoh Akanbi
-Osazuwa Faith Etieye
-Ministry	
-Internal Affairs
-Justice
+	Economic and Financial Crimes Commission	
+NAME OF COMMISIONER				MINISTRY			GEOPOLITICAL ZONES	Daudu
 Defence
-Power & Steel
-Petroleum
-Geopolitical Zones	
 South West
-North East
-South South
-South West
-South East

@@ -2,30 +2,41 @@ use std::io::Write;
 use std::io::Read;
 
 fn main() {
-    let n_o_c = vec!["\nAigbogun Alamba Daudu","\nMurtala Afeez Bendu","\nOkorocha Calistus Ogbona","\nAdewale Jimoh Akanbi","\nOsazuwa Faith Etieye"];
+    let mut input1 = String::new();
+    println!("Enter in the number of people:");
+    std::io::stdin().read_line(&mut input1).expect("Failed to read input");
+    let n_o_p = input1.trim().parse().expect("Invalid input");
 
-    let _m = vec!["\nInternal Affairs","\nJustice","\nDefence","\nPower & Steel","\nPetroleum"];
+    for index in 0..n_o_p{
+    let mut comm : Vec<String> = Vec::new();
+    let mut nig = String::new();
+    println!("What is the name of the comissioner?");
+    std::io::stdin().read_line(&mut nig).expect("Failed to read input");
+    let n_o_c:String = nig; 
+    comm.push(n_o_c.clone());
 
-    let g_z = vec!["\nSouth West","\nNorth East","\nSouth South","\nSouth West","\nSouth East"];
+    let mut mn : Vec<String> = Vec::new();
+    let mut m_n = String::new();
+    println!("What is your ministry?");
+    std::io::stdin().read_line(&mut m_n).expect("Failed to read input");
+    let min:String = m_n;
+    mn.push(min.clone());
+
+    let mut geo : Vec<String> = Vec::new();
+    let mut g_z = String::new();
+    println!("What is your geopolitical zone?");
+    std::io::stdin().read_line(&mut g_z).expect("Failed to read input");
+    let g:String = g_z;
+    geo.push(g.clone());
 
     let mut file = std::fs::File::create("EFCC.txt").expect("create failed");
 
-    let i:i32 = 1;
-    let j:i32 = 1;
-    let k:i32 = 1;
-    file.write_all("\nName of Comissioner\t".as_bytes()).expect("write failed");
-    for i in n_o_c {
-        file.write_all(i.as_bytes()).expect("write failed");
-    }
-        file.write_all("\nMinistry\t".as_bytes()).expect("write failed");
-        for j in &_m{
-                    file.write_all(j.as_bytes()).expect("write failed");
-        }
-            file.write_all("\nGeopolitical Zones\t".as_bytes()).expect("write failed");
-             for k in &g_z{
-                    file.write_all(k.as_bytes()).expect("write failed");
-             }
+    file.write_all("\tEconomic and Financial Crimes Commission\t".as_bytes()).expect("write failed");
+    file.write_all("\nNAME OF COMMISIONER\t\t\t\tMINISTRY\t\t\tGEOPOLITICAL ZONES\t".as_bytes()).expect("write failed");
+    file.write_all(n_o_c.as_bytes()).expect("write failed");
+    file.write_all(min.as_bytes()).expect("write failed");
+    file.write_all(g.as_bytes()).expect("write failed");
 
     println!("\nData written into file.");
-
+}
 }
