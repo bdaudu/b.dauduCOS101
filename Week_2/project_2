@@ -1,0 +1,14 @@
+fn main(){
+	let t:f64 = 900_000.0;
+	let m:f64 = 1_500_000.0;
+	let h:f64 = 2_250_000.0;
+	let d:f64 = 8_550_000.0;
+	let ac:f64 = 250_000.0;
+
+	//sum and average
+	let s = t + m + h + d + ac;
+	println!("Sum is {}",s);
+	let av = s/(5.0);
+	println!("Average is {}",av);
+
+}
